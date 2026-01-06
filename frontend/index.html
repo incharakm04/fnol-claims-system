@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FNOL Claims System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>File a Claim</h2>
+
+<div class="card">
+  <input id="policy" placeholder="Policy Number">
+  <input id="type" placeholder="Claim Type (Vehicle)">
+  <input id="location" placeholder="Incident Location">
+  <textarea id="desc" placeholder="Describe what happened"></textarea>
+
+  <button onclick="startClaim()">Start Claim</button>
+</div>
+
+<div class="card" id="uploadSection" style="display:none;">
+  <h3>Upload Damage Image</h3>
+  <input type="file" id="file">
+  <button onclick="uploadDoc()">Upload</button>
+</div>
+
+<div class="card" id="result"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
